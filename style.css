@@ -753,13 +753,19 @@
       box-shadow: rgba(45, 54, 139, 0.12) 0px 12px 24px;
     }
 
-    .service-card:last-child {
+    /*.service-card:last-child {
       grid-column: 1;
     }
 
     @media (min-width: 1024px) {
       .service-card:last-child { grid-column-start: 2; }
-    }
+    }*/
+    @media (min-width: 1024px) {
+      .service-card:last-child { grid-column: 1 / -1; }
+  }
+  .span2 { 
+    background-color:var(--primary-dark);
+  }
 
     .service-icon {
       width: 3.5rem;
